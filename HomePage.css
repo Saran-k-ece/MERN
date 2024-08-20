@@ -1,0 +1,822 @@
+
+*{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.Hheader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    height: 78px; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    overflow: hidden;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  /* Transparent Navbar */
+  .Hheader.transparent {
+    background-color: transparent;
+  }
+  
+  /* Navigation Styles */
+  .Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    background: transparent;
+  }
+  
+  .Nav .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img{
+    background-color: transparent;
+    width: 80px;
+    height: 60px;
+  }
+  
+  .logo-container h3{
+    color: white;
+    font-size: 30px;
+  }
+  
+  
+  
+  .Nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-grow: 1;
+
+  }
+  
+  .Nav li {
+    margin: 0 15px; 
+    font-size: 20px;
+    margin-left: 8px;
+    margin-left: 90px;
+  }
+  
+  .Nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: color 0.3s;
+   
+  }
+  
+  .logsign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.logsign button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logsign button:hover {
+    background-color: #0056b3;
+}
+
+.logsign button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+ 
+  
+  .Nav:hover, .Nav:focus-within {
+    background-color: white;
+  }
+  
+  .Nav:hover a, .Nav:focus-within a {
+    color: black;
+  }
+  
+  .Nav:hover h3, .Lheading:focus-within h3 {
+    color: black;
+  }
+  
+  .Nav:hover input, .input:focus-within input {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 25px;
+    
+  }
+
+
+
+/* img section */
+
+.Himg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.Himg img {
+    width: 100%;
+    height: 980px; 
+    max-height: 1000px; 
+    object-fit: cover;
+}
+
+.ImgContent {
+    margin-top: 130px;
+    position: absolute;
+    display: flex;
+    width: 900px;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fade 6s infinite;
+}
+
+.ImgContent p {
+    color: white;
+    font-size: 25px;
+}
+
+.ImgContent h1 {
+    padding-top: 10px;
+    color: white;
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+
+
+
+
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.fbtn {
+    margin-top: 50px;
+    width: 260px;
+    border: 1px solid white;
+    padding: 0;
+    text-align: center;
+}
+
+.fbtn button {
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fbtn button:hover {
+    background-color: rgb(246, 242, 242);
+    color: #443e3e;
+}
+
+.Hvideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.Hvideo video {
+    margin-top: -240px;
+    width: 100%;
+    height: 800px;
+    max-height: 900px;
+    object-fit: cover;
+}
+
+.VideoContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fade 6s infinite;
+}
+
+.VideoContent h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.VideoContent h2 {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 80px;
+    padding-top: 12px;
+}
+
+.vbtn {
+    margin-top: 50px;
+    width: 260px;
+    border: 1px solid white;
+    padding: 0;
+    text-align: center;
+}
+
+.vbtn button {
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.vbtn button:hover {
+    background-color: rgb(246, 242, 242);
+    color: #443e3e;
+}
+
+
+.TwoboxContainer {
+    margin-top:-40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+}
+
+.box{
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover img {
+    transform: scale(1.2); 
+}
+
+.BIC {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    animation: fade 6s infinite;
+}
+
+.BIC h3 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 1.2px;
+    margin: 0;
+}
+
+.ride{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+}
+
+.ride img{
+    width: 100%;
+    height: 100%;
+}
+
+.Store
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 600px;
+    height: 400px;
+    margin-right: 800px;
+    margin-top: 300px;
+}
+
+.Store h3{
+   
+    color: white;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+.Store h2{
+   
+    color: white;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.Store p{
+    padding-top: 90px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.rBtn{
+    margin-top:10px;
+    height: 40px;
+}
+.rBtn button{
+   
+    width: 160px;
+    height: 39px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+    
+}
+
+.rBtn button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.Footer{
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Footer img{
+    margin-left: 0px;
+   width: 100%;
+    height: 200px;
+
+   
+}
+
+.Footer h2{
+position: absolute;
+color:white;
+font-size: 60px;
+}
+
+.Footer h2:hover{
+   transform: scale(1.6);
+} 
+
+
+
+
+.Footerimg{
+    width: 100%;
+    height: 600px;
+}
+
+.Fcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 100%;
+    height: 500px;
+    gap: 5px;
+    margin: 10px;
+}
+
+.Fcontainer .box {
+    width: auto;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Fcontainer .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.Fcontainer .box h2{
+        margin-top: 100px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 45px;
+
+    }
+
+.LFooter{
+    margin-top:-50px;
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to left,grey,black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LFooter h2{
+    margin-top: -150px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1.5px; 
+}
+
+.L1{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.L1 h3{
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+
+.linput {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linput input {
+    width: 500px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.linput button {
+    margin-left: 4px;
+    height: 40px;
+    border-radius: 5px;
+    
+    color: white;
+    background: transparent;
+}
+
+
+.TC {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    color: white;
+    font-size: 14px;
+    margin-left: 150px;
+}
+
+.TCF{
+    display: flex;
+    flex-direction: row;
+}
+.TC input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: 2px; 
+}
+
+.TC p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+ 
+}
+
+.TC span {
+    margin-left: 5px;
+    color: #007BFF;
+}
+
+.TC span a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.TC span a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+  
+  .Details {
+    background-color: black;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.Dcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 50px;
+    padding: 0 20px;
+    max-width: 1200px;
+    width: 100%;
+   
+}
+
+.Company, .Products, .Support, .Dealers {
+    color: white;
+}
+
+.Company h3, .Products h3, .Support h3, .Dealers h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Company h5, .Products h5, .Support h5, .Dealers h5 {
+    color: rgb(143, 105, 105);
+    margin: 4px 0;
+    padding: 10px;
+}
+
+.Dcontainer h5:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.social{
+    width:100%;
+    height: 45px;
+    background-color:black;
+  
+}
+
+.SocCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socres p{
+  color: beige;
+  margin-left: 14px;
+}
+
+.socname p{
+    display: flex;
+    flex-direction: row;
+    color: beige;
+    margin-right: 20px;
+}
+
+.socname p:hover{
+    cursor: pointer;
+}
+
+.sociallogo i{
+    margin-top: -10px;
+    color: beige;
+    padding: 8px;
+    width: 30px;
+    height: 25px;
+}
+
+.sociallogo i:hover{
+     transform: scale(1.6);
+}
+
+/* media Query */
+
+@media (max-width: 1200px) {
+    .Dcontainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Dcontainer {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .Company h3, .Products h3, .Support h3, .Dealers h3 {
+        font-size: 20px;
+    }
+
+    .Company h5, .Products h5, .Support h5, .Dealers h5 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Dcontainer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .Company h3, .Products h3, .Support h3, .Dealers h3 {
+        font-size: 18px;
+    }
+
+    .Company h5, .Products h5, .Support h5, .Dealers h5 {
+        font-size: 12px;
+    }
+}
+
+
+/*media queries */
+
+@media (max-width: 1200px) {
+    .ImgContent h1 {
+        font-size: 60px;
+    }
+
+    .VideoContent h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ImgContent h1 {
+        font-size: 50px;
+    }
+
+    .ImgContent p {
+        font-size: 20px;
+    }
+
+    .VideoContent h2 {
+        font-size: 35px;
+    }
+
+    .VideoContent h4 {
+        font-size: 25px;
+    }
+    .Dcontainer h5{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImgContent h1 {
+        font-size: 40px;
+    }
+
+    .ImgContent p {
+        font-size: 18px;
+    }
+
+    .VideoContent h2 {
+        font-size: 30px;
+    }
+
+    .VideoContent h4 {
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+    .btn button {
+        font-size: 18px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ImgContent h1 {
+        font-size: 30px;
+    }
+
+    .ImgContent p {
+        font-size: 16px;
+    }
+
+    .VideoContent h2 {
+        font-size: 25px;
+    }
+
+    .VideoContent h4 {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 180px;
+    }
+
+    .btn button {
+        font-size: 16px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Dcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Company, .Products, .Support, .Dealers, .Social {
+        text-align: center;
+        min-width: 100%;
+    }
+}
+
+/* Media Query for devices with width 480px and below (Phones) */
+@media (max-width: 480px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    .Dcontainer {
+        padding: 10px;
+    }
+
+    .Company, .Products, .Support, .Dealers, .Social {
+        margin: 5px 0;
+    }
+}

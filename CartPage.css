@@ -1,0 +1,344 @@
+.Hheader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  height: 78px; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  overflow: hidden;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+/* Transparent Navbar */
+.Hheader.transparent {
+  background-color: transparent;
+}
+
+/* Navigation Styles */
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  background: transparent;
+}
+
+.Nav .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img{
+  background-color: transparent;
+  width: 80px;
+  height: 60px;
+}
+
+.logo-container h3{
+  color: white;
+  font-size: 30px;
+}
+
+
+
+.Nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-grow: 1;
+}
+
+.Nav li {
+  margin: 0 15px; 
+  font-size: 20px;
+}
+
+.Nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  transition: color 0.3s;
+}
+
+
+
+
+
+.Nav:hover, .Nav:focus-within {
+  background-color: white;
+}
+
+.Nav:hover a, .Nav:focus-within a {
+  color: black;
+}
+
+.Nav:hover h3, .Lheading:focus-within h3 {
+  color: black;
+}
+
+.Nav:hover input, .input:focus-within input {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  height: 25px;
+  
+}
+
+
+.cart-page {
+  margin-top: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url("road1.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  overflow: scroll;
+}
+
+.cart-page-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.cart-page-content h1, .cart-page-content p {
+  margin: 0;
+  padding: 10px;
+}
+
+.cart-page-content h1 {
+  font-size: 3rem;
+}
+
+.cart-page-content p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .cart-page-content h1 {
+      font-size: 2rem;
+  }
+
+  .cart-page-content p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-page-content h1 {
+      font-size: 1.5rem;
+  }
+
+  .cart-page-content p {
+      font-size: 0.875rem;
+  }
+}
+
+  .cart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 700px;
+    height: auto;
+    
+   
+  
+  
+  }
+  
+  .cart-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #faf4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+ 
+  }
+  
+  .cart-item:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+  }
+  
+  .cart-item img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    max-height: 150px;
+    margin: 0 auto 10px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-description h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  
+  }
+  
+  .cart-description p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .cart-description .price {
+    font-size: 1.1em;
+    color: #000;
+    margin-top: 10px;
+  }
+  
+  .cart-empty {
+    text-align: center;
+    font-size: 1.5em;
+    color: #888;
+    padding: 20px;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    
+    margin-left: 30px;
+  }
+
+  .quantity label{
+    color: #f44336;
+    margin-left: 50px;
+  }
+  
+  .quantity input {
+    margin-top: 5px;
+    width: 50px;
+    margin-left: 10px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 80px;
+    color: #111;
+    background-color: none;
+  }
+  
+  .cart-total {
+    display: flex;
+    margin: 0%;
+    
+  
+  }
+  
+  .total-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    
+    
+  }
+  
+  .total-card h2{
+       color: #000;
+       text-align: center;
+       font-size: 30px;
+  }
+  
+  .total-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    
+  }
+  .Pi h2{
+    color: #111;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .price-row h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .price, .gst, .offer {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    
+    
+  }
+  
+  .gst, .offer {
+    font-size: 0.9rem;
+  }
+
+  .Cartbtn button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .Cartbtn button:hover {
+    background-color: #d32f2f;
+  }
+  
+
+  .Cartbtn button{
+     height: 40px;
+  }
+
+
+  .Pay button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 110px;
+    font-size: 20px;
+  }
+  
+  .Pay button:hover {
+    background-color: #d32f2f;
+  }
+  
+  
+  
